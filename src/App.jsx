@@ -22,11 +22,11 @@ import Payment from './components/Payment'
 import { Offline } from 'react-detect-offline'
 // import toast from 'react-hot-toast';
 import { BallTriangle } from 'react-loader-spinner'
-
+// import { HashRouter } from "react-router-dom"
 // import { BallTriangle } from "react-loader-spinner";
 import { FaWifi } from "react-icons/fa";
 // import { Offline } from 'react-detect-offline'
-
+// import { BrowserRouter } from "react-router-dom"
 // import toast from 'react-hot-toast'
 // import Navbar from './components/Navbar'
 
@@ -34,7 +34,7 @@ const queryClient = new QueryClient()
 
  const router= createBrowserRouter([
   { path: '', element: <Layout/>, children: [ 
-// {index: true, element: <Login/>},
+{index: true, element: <Login/>},
     { path: 'register', element: <Register/> },
 { path: 'Login', element:<Login/>},
    {path: 'Logout', element: <Login/>}
